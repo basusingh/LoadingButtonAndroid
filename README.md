@@ -157,7 +157,7 @@ The button enters this state after `stopAnimation()` when the button is not morp
 This library only supports androidx since prior the version 2.0.0. So don't try to use it with the old Support Library. Use androidx instead.
 
 ### Avoid Memory Leaks
-Prior to version 2.1.0, to avoid memory leaks is your code, you must dispose the buttons in the onDestroy method. Example:
+Prior to version 2.1.0, to avoid memory leaks in your code, you must dispose the buttons in the onDestroy method. Example:
 
 ```java
 override fun onDestroy() {
@@ -172,7 +172,7 @@ call `dispose()` when an `onDestroy()` event is observed by the lifecycle owner.
 ## Contributing
 ###Setup Git Pre-commit hook script (Optional)
 
-The purpose of setting up this optional pre-commit hook is so that the `lintKotlin` Gradle task runs each time you as a developer create a commit. Although the Travis build will run `lintKotlin` in the cloud, running this locally will allow you to catch Kotlin Lint violations early in the development cycle without having to wait for Travis's build report.
+The purpose of setting up this optional pre-commit hook is so that the `lintKotlin` Gradle task runs each time you, as a developer, creates a commit. Although the Travis build will run `lintKotlin` in the cloud, running this locally will allow you to catch Kotlin Lint violations early in the development cycle without having to wait for Travis's build report.
 
 To enable the script, execute the following commands starting from the project's root directory:
 
